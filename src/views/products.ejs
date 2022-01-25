@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>E-commerce - </title>
 </head>
 <body>
-    <h1>Produtos</h1>
-    <table>
-        <thead>
-            <tr>
+    <div class="container">
 
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>&nbsp;</th>
-            </tr>
-
-        </thead>
-        <tbody>
-        <% products.forEach(function(product){  %>
-            <tr>
-                <td><%= product.attributes.name %></td>
-                <td><%= product.attributes.price %></td>
-                <td></td>
-            </tr>
-           <% }) %> 
-        </tbody>
-    </table>
+        <h1>Produtos</h1>
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+    
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>&nbsp;</th>
+                </tr>
+    
+            </thead>
+            <tbody>
+            <% products.forEach(function(product){  %>
+                <tr>
+                    <td><%= product.attributes.name %></td>
+                    <td><%= product.attributes.price %></td>
+                    <td><a href="http://localhost:3000<%= product.links.self %>">Excluir</a></td>
+                </tr>
+               <% }) %> 
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
