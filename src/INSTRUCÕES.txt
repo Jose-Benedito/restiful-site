@@ -1,0 +1,8 @@
+# MODULOS NOVOS INSTALADOS
+# REQUEST E REQUEST-PROMISE-NATIVE //Para pegar uma requisição de uma api( que roda em outra url)
+
+$ npm install --save request request-promise-native 
+
+# EJS.js  //template html para carregar array, listas do back-end (consultar o site)
+
+$ npm install ejs --save

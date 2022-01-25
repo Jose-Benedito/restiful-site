@@ -1,0 +1,21 @@
+{
+  "name": "restiful-site",
+  "version": "0.0.1",
+  "description": "Site que ira consumir dads da api restiful",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ./src/index"
+  },
+  "author": "Jose benedito Medeiros",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
